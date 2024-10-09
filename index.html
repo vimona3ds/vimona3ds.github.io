@@ -2,11 +2,51 @@
 <html lang="en">
 
 <head>
+	<title>marcus franco</title>
+	<meta name="description" content="" />
+	<meta name="twitter:card" content="" />
+	<meta name="twitter:site" content="@bocona3ds" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<style>
+		body {
+			line-height: 1.3;
+			padding: 0 1rem;
+			margin: 0.8rem auto;
+			max-width: 30rem;
+		}
+
+		main {
+			max-width: 80rem;
+			margin: 10rem auto;
+		}
+	</style>
 </head>
 
 <body>
-	<p>hello</p>
-	<a href="./stickies">stickies!</a>
+	<main>
+		<h1>marcus franco</h1>
+		<p><i id="splash"></i></p>
+		<a href="./stickies">stickies!</a>
+	</main>
+
+	<script>
+		const sentences = [
+			"enjoys a very wide variety of music",
+			"stumbles his words sometimes",
+			"thinks way too much about unimportant things",
+			"eats food about 3x a day",
+			"drinks copious amounts of water",
+			"uses vim, but not very well",
+			"has memorized the pokérap in its entirety",
+			"has 3 cats and 6 lint rollers",
+			"cannot decide on a haircut",
+		]
+
+		const splash = document.getElementById("splash")
+		const randomSentence = sentences[Math.floor(Math.random() * sentences.length)]
+
+		splash.innerHTML = randomSentence
+	</script>
 </body>
 
 </html>
