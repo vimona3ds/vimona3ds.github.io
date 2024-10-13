@@ -1,6 +1,10 @@
 /*!*********************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/index.scss ***!
   \*********************************************************************************************************/
+@import url(https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap);
+/*!*************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/index.scss (1) ***!
+  \*************************************************************************************************************/
 html,
 :root {
   touch-action: none;
@@ -13,7 +17,7 @@ body {
   margin: 0;
   width: 100%;
   height: 100%;
-  font-family: "Courier New", Courier, monospace;
+  font-family: "Raleway", "Courier New", Courier, monospace;
   font-size: 1.25rem;
   background-color: #222;
   overflow: hidden;
@@ -38,6 +42,7 @@ body {
   background-color: rgba(255, 255, 255, 0.25);
   transition: all 0.2s ease;
   transform: translate(-50%, -50%);
+  border-radius: 0;
 }
 .cursor.incorrect {
   background-color: rgba(255, 0, 0, 0.25);
@@ -58,7 +63,8 @@ body {
   width: 100%;
   height: 100%;
   filter: blur(3vmin);
-  transition: all 0.2s cubic-bezier(0, 1, 1, 1), opacity 0.4s ease;
+  transition: all 0.2s;
+  font-family: "Courier New", Courier, monospace;
 }
 
 .description,
@@ -81,25 +87,27 @@ body {
   overflow: hidden;
   position: relative;
   aspect-ratio: 1;
-  border: 1px solid rgba(255, 255, 255, 0.75);
   margin: 1rem;
   transition: font-size 0.4s cubic-bezier(0, 1, 1, 1);
   font-size: 12vmin;
+  border: 1px solid rgba(255, 255, 255, 0.75);
+  border-radius: 0;
+  box-shadow: none;
 }
 .game.shake {
   animation: 0.4s ease 0s 1 incorrect;
 }
 .game.counting-down-3 .description {
   font-size: 12vmin;
-  font-weight: 900;
+  font-weight: 700;
 }
 .game.counting-down-2 .description {
   font-size: 16vmin;
-  font-weight: 900;
+  font-weight: 700;
 }
 .game.counting-down-1 .description {
   font-size: 20vmin;
-  font-weight: 900;
+  font-weight: 700;
 }
 
 .instructions {
@@ -111,12 +119,56 @@ body {
   transition: all 0.2s ease;
 }
 
+.rating {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 4vmin;
+}
+
 .results {
-  font-size: 12vmin;
-  font-weight: 900;
+  font-weight: 700;
   opacity: 0;
   filter: blur(1vmin);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 5vmin;
   transition: all 0.2s cubic-bezier(0, 1, 1, 1);
+  padding-top: 4vmin;
+  padding-bottom: 14vmin;
+}
+
+.utility-bar {
+  z-index: 100000;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: fit-content;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 4vmin;
+  transition: transform 0.75s cubic-bezier(0.41, -0.12, 0.77, -0.07);
+}
+.utility-bar.hidden {
+  transform: translateX(100vw);
+}
+.utility-bar.no-transition {
+  transition: none;
+}
+
+.info {
+  display: grid;
+  place-content: center;
+  flex-grow: 1;
+}
+
+.speed {
+  font-size: 20vmin;
+}
+
+.mistakes {
+  font-size: 8vmin;
 }
 
 .token {
@@ -144,13 +196,15 @@ body {
 }
 
 .button {
+  font-family: "Raleway", "Courier New", Courier, monospace;
   background-color: transparent;
   border: 1px solid rgba(255, 255, 255, 0.75);
   font-size: 1.25rem;
   padding: 0.9375rem;
   color: rgba(255, 255, 255, 0.75);
-  font-family: "Courier New", Courier, monospace;
   transition: all 0.2s cubic-bezier(0, 1, 1, 1);
+  border-radius: 0;
+  box-shadow: none;
   cursor: pointer;
 }
 .button:hover {
@@ -164,26 +218,14 @@ body {
 
 .game-button {
   font-size: 4vmin;
-  padding: 3vmin;
-}
-
-.share-button {
-  opacity: 0;
-  margin: 3vmin;
-  bottom: 2vmin;
-  position: absolute;
+  padding: 3vmin 5vmin;
+  background-color: #222;
+  z-index: 10000;
 }
 
 .instructions-button {
-  position: absolute;
-  top: 0;
-  left: 0;
   background-color: #222;
   z-index: 1000;
-  transition: transform 0.75s cubic-bezier(0.41, -0.12, 0.77, -0.07);
-}
-.instructions-button.hidden {
-  transform: translateX(100vw);
 }
 
 .hide-instructions-button {
@@ -202,6 +244,13 @@ body {
 body.game-loading .grid {
   opacity: 0;
 }
+body.game-loading .utility-bar > .button:not(.instructions-button) {
+  display: none;
+}
+
+body.game-ready .utility-bar > .button:not(.instructions-button) {
+  display: none;
+}
 
 body.game-playing .description {
   opacity: 0;
@@ -215,6 +264,13 @@ body.game-playing .grid {
 body.game-playing .results {
   opacity: 0.1;
 }
+body.game-playing .utility-bar > .button {
+  display: none;
+  opacity: 0;
+}
+body.game-playing .rating {
+  opacity: 0;
+}
 
 body.game-results .description {
   opacity: 0;
@@ -223,11 +279,22 @@ body.game-results .results {
   opacity: 1;
   filter: blur(0vmin);
 }
+body.game-results .rating {
+  opacity: 1;
+}
 body.game-results .share-button {
   opacity: 1;
 }
 body.game-results .input {
   z-index: -100;
+}
+body.game-results .instructions-button {
+  display: none;
+  opacity: 0;
+}
+body.game-results .utility-bar > .button:not(.instructions-button) {
+  display: block;
+  opacity: 1;
 }
 
 body.showing-instructions .container {
