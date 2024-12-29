@@ -6,7 +6,7 @@
 	<meta name="description" content="hello" />
 	<meta property="og:description" content="hello" />
 	<meta property="og:locale" content="en_US" />
-	<meta property="og:url" content="https://smelly.zone" />
+	<meta property="og:url" content="https://funky.rocks" />
 	<meta name="twitter:card" content="hello" />
 	<meta name="twitter:site" content="@bocona3ds" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -26,19 +26,60 @@
 			float: right;
 			width: 125px;
 		}
+
+        .marquee {
+                          width: 100%;
+                          overflow: hidden;
+                          white-space: nowrap;
+                          border: 1px solid #333;
+                        }
+
+                        .marquee div {
+                                display: inline-block;
+                          animation: marquee 7s linear infinite;
+                        }
+
+                        @keyframes marquee {
+                          0% {
+                            transform: translateX(0%);
+                          }
+                          100% {
+                            transform: translateX(-100%);
+                          }
+                        }
 	</style>
 </head>
 
 <body>
-	<h3>tl;dr</h3>
-	<p>i'm marcus, 22, a builder, looking for a new idea to obsess over, based in sf bay area. reach out below.</p>
+        <div class="marquee">
+                <div class="group1">
+                        <small>funky.rocks</small>
+        <img src="./images/rock1.png" height="100" />
+        <img src="./images/rock2.png" height="100" />
+        <img src="./images/rock3.png" height="100" />
+        <img src="./images/rock4.png" height="100" />
+        <img src="./images/rock5.png" height="100" />
+                </div>
+                <div class="group2">
+                        <small>funky.rocks</small>
+        <img src="./images/rock1.png" height="100" />
+        <img src="./images/rock2.png" height="100" />
+        <img src="./images/rock3.png" height="100" />
+        <img src="./images/rock4.png" height="100" />
+        <img src="./images/rock5.png" height="100" />
+                </div>
+        </div>
+        <h1>hey i'm marcus!</h1>
+        <p>i'm 22 y/o, based in the bay area, ex-software engineer, now building something new.</p>
 	<img id="pikachu" src="./images/hello.png" />
 	<h3>contacts</h3>
-	<ul>
-		<li>email: marcus [at] smelly.zone</li>
+    <p>reach out if you'd like to chat! trying to expand my circle</p>
+    <ul>
+            <li><b>email: </b>marcus [at] funky.rocks</li>
+            <li><b>phone, discord: </b>email/dm me for it!</li>
 		<li><a target="_blank" href="https://twitter.com/bocona3ds">twitter</a></li>
 		<li><a target="_blank" href="https://github.com/vimona3ds">github</a></li>
-		<li><a target="_blank" href="https://www.linkedin.com/in/marcus-f-ba79132a6">linkedin</a></li>
+		<li><a target="_blank" href="https://www.linkedin.com/in/marcus-franco-ba79132a6/">linkedin</a></li>
 	</ul>
 	<h3>background</h3>
 	<p>at 19, i moved from the midwest to the bay to work at <a target="_blank" href="https://corp.roblox.com/">roblox</a>
@@ -59,28 +100,23 @@
 		cuz college.
 	</p>
 	<h3>interests</h3>
-	<p><b>startups</b> — i like having one project to devote my time to, wearing multiple hats, building obsessively, etc.
-	</p>
-	<p><b>dev</b> — i'm most experienced with, and passionate about, frontend dev on web, like react, typescript, webpack,
-		babel,
-		jest, node, that kinda thing. i'm also passionate about low-level system dev, like virtual machines, emulators,
-		compilers, language interpreters, operating systems. sadly i haven't touched that kinda stuff in years.
-	<p><b>music</b> — i like listening to, or learning about, music that challenges my understanding of it. see <a
-			target="_blank" href="https://www.last.fm/user/e1p">last.fm</a> for my recent taste.
-	</p>
+	<p><b>startups</b> — i like projects with an impactful, bold vision, one i could spend all my time thinking about. i naturally prefer to wear multiple hats, building obsessively, etc.</p>
+	<p><b>coding and technology</b> — i'm most experienced with frontend technology on web, like react, typescript, webpack,
+		babel, jest, node, that kinda thing. i'm passionate about it, but it's mainly bc i'm passionate about aesthetics. i'm more passionate about low-level programming and systems, like virtual machines, emulators, compilers, language interpreters, operating systems, reverse engineering, but sadly i haven't touched any of it in years.</p>
+    <p><b>music</b> — i really enjoy listening to, or learning about, music that challenges my understanding of it. in 2024, i mainly listened to electronic music, primarily idm, ambient, and breakcore, with lots of experimental, noise, industrial sprinkled in. top artists: Boards of Canada, Aphex Twin, Alberich. (more details on my <a target="_blank" href="https://www.last.fm/user/e1p/library/artists">last.fm</a>)</p>
+	<p><b>puzzles and math</b> — loooove math, in high school i took multivariable calc and diff eq, it was really fun. but since then i haven't needed to use anything close to that level of math. i see math as a form of puzzle which is where the passion comes from i think. other puzzles include rubik's cubes (i still have all 20+ from my childhood) and nyt puzzles (strands!!, connections, wordle)</p>
+	<p><b>aesthetics and design</b> — interior design, ui/ux/interface design, consumer aesthetics, fashion, photography, too much to unpack here. i love learning about
+		aesthetic history and evolution. i pay close attention to aesthetics generally but especially when building.</p>
+	<p><b>retro tech</b> — CRT TVs/monitors (the old box shaped ones). last year i had 4, including an iMac G3 and a
+		high-end consumer Sony TV from the 80s. sadly i got rid of them, but i'm starting a new collection this year.</p>
+	<p><b>retro gaming</b> — grew up on nintendo games (favs: paper mario on n64, luigi's mansion on gc, tetris on nes),
+		roblox, minecraft, valve games (favs: portal, half life).
 	<p><b>languages</b> — used to spend hours learning languages as a kid. also made several of my own (constructed
 		languages, or "conlangs"). the only thing i've retained since then is being able to write in various writing systems
 		(cyrillic, arabic, hangul, greek).</p>
-	<p><b>aesthetics</b> — interior design, interface design, fashion, anything goes. i love learning about
-		aesthetic history and evolution. i pay close attention to aesthetics when building.</p>
-	<p><b>retro tech</b> — CRT TVs/monitors (the old box shaped ones). last year i had 4, including an iMac G3 and a
-		high-end consumer Sony TV from the 80s.</p>
-	<p><b>retro gaming</b> — grew up on nintendo games (favs: paper mario on n64, luigi's mansion on gc, tetris on nes),
-		roblox, minecraft, valve games (favs: portal, half life).
-	<p><b>puzzles</b> — rubik's cubes of all kinds. nyt puzzles (strands, connections, wordle of course)</p>
 	<p><b>linguistics, psychology, neuroscience, cognitive science, philosophy</b> — i was more deeply interested in these
-		subjects at various points in my life, but haven't retained anything i once knew about them. would love to have a
-		discussion around them anyway lol</p>
+		subjects at various points in my life, but haven't retained almost anything i once knew about them. i'd still love to have a
+		discussion focused on them, but i wouldn't be able to contribute much besides extreme curiosity lol</p>
 </body>
 
 </html>
