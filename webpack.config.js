@@ -4,7 +4,7 @@ module.exports = {
   mode: 'development',
   entry: './src/main.ts',
   output: {
-    path: path.resolve(__dirname, 'dist'),
+    path: path.resolve(__dirname, 'docs'),
     filename: 'main.js',
   },
   resolve: {
@@ -15,10 +15,10 @@ module.exports = {
   },
   devServer: {
     static: {
-      directory: path.join(__dirname, 'dist'),
+      directory: path.join(__dirname, 'docs'),
       watch: true,
     },
-    watchFiles: ['./src/**/*', './dist/**/*'],
+    watchFiles: ['./src/**/*', './docs/**/*'],
     hot: true,
     port: 9000,
   },
