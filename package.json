@@ -1,5 +1,5 @@
 {
-  "name": "marcusalfonso.com",
+  "name": "vimona3ds.github.io",
   "version": "1.0.0",
   "main": "webpack.config.js",
   "scripts": {
@@ -8,15 +8,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/vimona3ds/marcusalfonso.com.git"
+    "url": "git+https://github.com/vimona3ds/vimona3ds.github.io.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/vimona3ds/marcusalfonso.com/issues"
+    "url": "https://github.com/vimona3ds/vimona3ds.github.io/issues"
   },
-  "homepage": "https://github.com/vimona3ds/marcusalfonso.com#readme",
+  "homepage": "https://github.com/vimona3ds/vimona3ds.github.io#readme",
   "description": "",
   "devDependencies": {
     "ts-loader": "^9.5.2",
