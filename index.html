@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-T7TPDGGQYY"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-T7TPDGGQYY');
+    </script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>marcusinterface</title>
+
+    <style>
+        @font-face {
+            font-family: 'OCRAStd';
+            src: url('assets/OCRAStd.otf') format('opentype');
+        }
+
+        * {
+            --background-color: #000000;
+            --foreground-color: #e1f0ee;
+            --foreground-color-alt: #96adcd;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            height: 100svh;
+            width: 100svw;
+            font-family: 'OCRAStd', monospace;
+            font-size: 20px;
+            background-color: var(--background-color);
+            color: var(--foreground-color);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            line-height: 1.5;
+            letter-spacing: -3px;
+        }
+
+        a {
+            color: var(--foreground-color);
+        }
+
+        a:active, a:hover {
+            color: var(--foreground-color-alt);
+        }
+
+        .interface {
+            /* width: min(700px, 100vw); */
+        }
+
+        .container {
+            /* border: 1px solid var(--foreground-color); */
+        }
+
+        .header {
+            /* border-bottom: 1px solid var(--foreground-color); */
+        }
+
+        .avatar {
+            filter: drop-shadow(0 0 2px var(--foreground-color));
+            border: 2px solid var(--foreground-color);
+            width: 320px;
+        }
+
+        .list {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .list li strong {
+            background-color: var(--foreground-color);
+            color: var(--background-color);
+            filter: drop-shadow(0 0 2px var(--foreground-color));
+        }
+    </style>
+</head>
+
+<body>
+    <div class="interface">
+        <div class="container">
+            <div class="header">
+                <div class="avatar-container">
+                    <img class="avatar" src="/assets/pfp.gif" alt="marcus" />
+                </div>
+                <div class="description">
+                    <ul class="list">
+                        <li><strong>name:</strong> marcus</li>
+                        <li><strong>age:</strong> 22</li>
+                        <li><strong>location:</strong> bay area</li>
+                        <li><strong>occupation:</strong> solo founder @ stealth</li>
+                        <li><strong>previously:</strong> software engineer @ roblox</li>
+                        <li><strong>email:</strong> hello@(this domain)</li>
+                        <li><strong>x/twitter:</strong> <a href="https://x.com/marcusinterface">@marcusinterface</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="content">
+            </div>
+        </div>
+    </div>
+
+    <p></p>
+    <script src="main.js"></script>
+</body>
+
+</html>
