@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon --watch index.html --exec \"serve\"",
+    "start": "live-server",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -18,7 +18,6 @@
   "homepage": "https://github.com/vimona3ds/vimona3ds.github.io#readme",
   "description": "",
   "devDependencies": {
-    "nodemon": "^3.1.10",
-    "serve": "^14.2.4"
+    "live-server": "^1.2.2"
   }
 }
