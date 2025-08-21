@@ -22,11 +22,20 @@
             src: url('assets/OCRAStd.otf') format('opentype');
         }
 
+        * {
+            box-sizing: border-box;
+        }
+
         body {
             background-color: #fdfdfd;
-            /* font-family: 'Arial', sans-serif; */
             font-size: 24px;
             line-height: 1.25;
+            -webkit-font-smoothing: none;
+            -moz-osx-font-smoothing: unset;
+            font-smooth: never;
+            image-rendering: pixelated;
+            image-rendering: -moz-crisp-edges;
+            image-rendering: crisp-edges;
         }
 
         ul {
@@ -92,8 +101,14 @@
             min-width: 400px;
         }
 
+        .links-container {
+            width: 100%;
+            display: flex;
+        }
+
         .links {
-            transform: scaleX(1.5) translateX(40px);
+            transform: scaleX(1.2) scaleY(0.8) translateX(4px) translateY(-16px);
+            height: 160px;
         }
 
         .links a {
@@ -120,12 +135,23 @@
         @media (max-width: 830px) {
             .layout {
                 flex-direction: column;
+                gap: 0;
             }
             .sidebar,
             .content {
                 flex: 0 0 auto;
                 width: 100%;
                 max-width: 100%;
+            }
+            .links {
+                max-width: 100%;
+            }
+            .content {
+                min-width: unset;
+                padding: 0 10px;
+            }
+            .portrait {
+                width: min(440px, 100%);
             }
 
             body {
@@ -141,18 +167,19 @@
     <div class="layout">
         <div class="sidebar">
             <div class="portrait">
-                <!-- <img src="./assets/marcus.jpg" class="portrait-image" /> -->
                 <span class="portrait-text">i am Marcus💔</span>
                 <!-- <img src="./assets/cd.gif" class="portrait-cd" /> -->
             </div>
-            <div class="links">
-                <ul>
-                    <li><a href="./">about</a></li>
-                    <li><a href="#">stuff ive done (soon)</a></li>
-                    <li><a href="#">blog (soon)</a></li>
-                    <li><a href="https://x.com/marcusquest" target="_blank">x/twitter</a></li>
-                    <li><a href="https://github.com/vimona3ds" target="_blank">github</a></li>
-                </ul>
+            <div class="links-container">
+                <div class="links">
+                    <ul>
+                        <li><a href="./">about</a></li>
+                        <li><a href="#">stuff ive done (soon)</a></li>
+                        <li><a href="#">blog (soon)</a></li>
+                        <li><a href="https://x.com/marcusquest" target="_blank">x/twitter</a></li>
+                        <li><a href="https://github.com/vimona3ds" target="_blank">github</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
         <div class="content">
