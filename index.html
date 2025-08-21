@@ -102,14 +102,15 @@
             transition: all 0.2s ease;
         }
 
-        .links a:hover::before {
+        .links a:hover::before,
+        .links li:first-child a::before {
             content: '';
             position: absolute;
             left: -30px;
             top: 50%;
             transform: translateY(-50%) scaleX(-1);
-            width: 20px;
-            height: 20px;
+            width: 30px;
+            height: 30px;
             background-image: url('./assets/arrow.gif');
             background-size: contain;
             background-repeat: no-repeat;
@@ -142,19 +143,19 @@
             <div class="portrait">
                 <!-- <img src="./assets/marcus.jpg" class="portrait-image" /> -->
                 <span class="portrait-text">i am Marcus💔</span>
-                <img src="./assets/cd.gif" class="portrait-cd" />
+                <!-- <img src="./assets/cd.gif" class="portrait-cd" /> -->
             </div>
             <div class="links">
                 <ul>
-                    <li><a href="https://x.com/marcusquest" target="_blank">x/twitter</a></li>
-                    <li><a href="https://github.com/vimona3ds" target="_blank">github</a></li>
+                    <li><a href="./">about</a></li>
                     <li><a href="#">stuff ive done (soon)</a></li>
                     <li><a href="#">blog (soon)</a></li>
+                    <li><a href="https://x.com/marcusquest" target="_blank">x/twitter</a></li>
+                    <li><a href="https://github.com/vimona3ds" target="_blank">github</a></li>
                 </ul>
             </div>
         </div>
         <div class="content">
-            
             <p><b>currently:</b><br>
             23 y/o<br>
             based in san francisco, ca<br>
