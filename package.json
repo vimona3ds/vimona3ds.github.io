@@ -1,0 +1,23 @@
+{
+  "name": "finalsite",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "live-server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vimona3ds/vimona3ds.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vimona3ds/vimona3ds.github.io/issues"
+  },
+  "homepage": "https://github.com/vimona3ds/vimona3ds.github.io#readme",
+  "description": "",
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  }
+}
