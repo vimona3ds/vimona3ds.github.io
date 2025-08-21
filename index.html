@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QQBWG1FGVP"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-QQBWG1FGVP');
+    </script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>i am Marcus</title>
+
+    <style>
+        @font-face {
+            font-family: 'OCRAStd';
+            src: url('assets/OCRAStd.otf') format('opentype');
+        }
+
+        body {
+            background-color: #fdfdfd;
+            /* font-family: 'Arial', sans-serif; */
+            font-size: 24px;
+            line-height: 1.25;
+        }
+
+        ul {
+            list-style-type: "- ";
+        }
+
+        li {
+            margin-bottom: 4px;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        
+        /* Responsive two-column layout */
+        .layout {
+            display: flex;
+            align-items: flex-start;
+            gap: 16px;
+        }
+        
+        .sidebar {
+            flex: 0 0 500px;
+            max-width: 500px;
+            display: flex;
+            align-items: flex-end;
+            gap: 12px;
+        }
+
+        .portrait {
+            width: 100%;
+        }
+
+        .portrait-text {
+            font-size: 40px;
+            transform: scaleY(3) translateY(-28px);
+        }
+        
+        .content {
+            flex: 1 1 auto;
+            min-width: 400px;
+        }
+        
+        @media (max-width: 768px) {
+            .layout {
+                flex-direction: column;
+            }
+            .sidebar,
+            .content {
+                flex: 0 0 auto;
+                width: 100%;
+                max-width: 100%;
+            }
+
+            body {
+                align-items: flex-start;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="layout">
+        <div class="sidebar">
+            <img src="./assets/marcus.jpg" class="portrait" />
+        </div>
+        <div class="content">
+            <p><b>currently:</b><br>
+            23 y/o<br>
+            san francisco, ca<br>
+            founder of (...)<br>
+            <p><b>prev:</b><br>
+            swe at <a href="https://corp.roblox.com" target="_blank">roblox</a> (since 19 y/o)<br>
+            2x hackathon wins (<a href="https://devpost.com/software/blockfund" target="_blank">stanford</a>, <a href="https://devpost.com/software/grosseries" target="_blank">ucsd</a>)<br>
+            2x college dropout</p>
+            <p><b>contact:</b><br>
+            dm me: <a href="https://x.com/marcusquest" target="_blank">@marcusquest on x.com</a><br>
+            text me: 650-488-4819<br>
+            email me: hi@(this domain)</p>
+            <p><b>links:</b><br>
+                <a href="https://github.com/marcusquest" target="_blank">x/twitter</a><br>
+                <a href="https://github.com/vimona3ds" target="_blank">github</a><br>
+                <a href="#">stuff ive done (soon)</a><br>
+                <a href="#">blog (soon)</a></p>
+            <p><b>if u like my website:</b></p>
+            <email-form></email-form>
+        </div>
+    </div>
+</body>
+
+</html>
