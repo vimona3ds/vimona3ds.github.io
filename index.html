@@ -22,10 +22,12 @@
 <body>
     <div class="layout">
         <div class="sidebar">
-            <div class="portrait">
-                <span class="portrait-text">i am Marcus💔</span>
-                <!-- <img src="./assets/mac.gif" class="portrait-cd" /> -->
-                <img src="./assets/pika.gif" class="portrait-pika" />
+            <div class="portrait-container">
+                <div class="portrait">
+                    <span class="portrait-text">i am Marcus💔</span>
+                    <!-- <img src="./assets/mac.gif" class="portrait-cd" /> -->
+                    <img src="./assets/pika.gif" class="portrait-pika" />
+                </div>
             </div>
             <div class="links-container">
                 <div class="links">
@@ -44,7 +46,7 @@
             23 y/o<br>
             based in san francisco, ca<br>
             founder of (...)<br>
-            <p><b>prev:</b><br>
+            <p><b>previously:</b><br>
             swe at <a href="https://corp.roblox.com" target="_blank">roblox</a> (since 19 y/o)<br>
             2x hackathon wins (<a href="https://devpost.com/software/blockfund" target="_blank">stanford</a>, <a href="https://devpost.com/software/grosseries" target="_blank">ucsd</a>)<br>
             college dropout</p>
@@ -61,8 +63,11 @@
                 const phone = ['650', '-', '488', '-', '4819'].join('');
                 document.getElementById('phone-text').innerHTML = phone;
             </script>
-            <p><b>if u like my website:</b></p>
-            <email-form></email-form>
+            <form class="subscribe-form">
+                <p>give me your email now</p>
+                <input class="aqua-input" type="email" placeholder="email" />
+                <button class="aqua-button" type="submit">Subscribe</button>
+            </form>
         </div>
     </div>
 </body>
