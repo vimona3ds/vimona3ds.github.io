@@ -60,11 +60,33 @@
 
         .portrait {
             width: 440px;
+            height: 440px;
+            position: relative;
+            background-image: url(./assets/marcus.jpg);
+            background-size: cover;
+        }
+
+        .portrait > * {
+            position: absolute;
+        }
+
+        .portrait-image {
+            width: 440px;
+            height: 440px;
+            inset: 0;
         }
 
         .portrait-text {
             font-size: 40px;
             transform: scaleY(3) translateY(-28px);
+            top: 378px;
+            left: 30px;
+            color: transparent;
+        }
+
+        .portrait-cd {
+            bottom: -4px;
+            left: 28px;
         }
         
         .content {
@@ -93,21 +115,34 @@
 <body>
     <div class="layout">
         <div class="sidebar">
-            <img src="./assets/marcus.jpg" class="portrait" />
+            <div class="portrait">
+                <!-- <img src="./assets/marcus.jpg" class="portrait-image" /> -->
+                <span class="portrait-text">i am Marcus💔</span>
+                <img src="./assets/cd.gif" class="portrait-cd" />
+            </div>
         </div>
         <div class="content">
             <p><b>currently:</b><br>
             23 y/o<br>
-            san francisco, ca<br>
+            based in san francisco, ca<br>
             founder of (...)<br>
             <p><b>prev:</b><br>
             swe at <a href="https://corp.roblox.com" target="_blank">roblox</a> (since 19 y/o)<br>
             2x hackathon wins (<a href="https://devpost.com/software/blockfund" target="_blank">stanford</a>, <a href="https://devpost.com/software/grosseries" target="_blank">ucsd</a>)<br>
             college dropout</p>
             <p><b>contact:</b><br>
-            dm me: <a href="https://x.com/marcusquest" target="_blank">@marcusquest on x.com</a><br>
-            text me: 650-488-4819<br>
-            email me: hi@(this domain)</p>
+            dm me: <a href="https://x.com/marcusquest" target="_blank">@marcusquest on x/twitter</a><br>
+            email me: <span id="email-text"></span><br>
+            text me: <span id="phone-text"></span></p>
+            <script>
+                // Obfuscate email to prevent spam/crawlers
+                const email = ['hi', '@', 'marcusquest', '.', 'com'].join('');
+                document.getElementById('email-text').innerHTML = '<a href="mailto:' + email + '">' + email + '</a>';
+                
+                // Obfuscate phone number to prevent spam/crawlers
+                const phone = ['650', '-', '488', '-', '4819'].join('');
+                document.getElementById('phone-text').innerHTML = '<a href="tel:' + phone + '">' + phone + '</a>';
+            </script>
             <p><b>links:</b><br>
                 <a href="https://github.com/marcusquest" target="_blank">x/twitter</a><br>
                 <a href="https://github.com/vimona3ds" target="_blank">github</a><br>
