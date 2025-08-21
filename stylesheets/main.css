@@ -28,49 +28,40 @@ body {
 }
 
 .sidebar {
-    flex: 0 0 440px;
-    max-width: 440px;
+    flex: 0 0 400px;
+    max-width: 400px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
 }
 
 .portrait {
-    width: 440px;
-    height: 440px;
+    width: 400px;
     position: relative;
-    background-image: url('../assets/marcus.jpg');
-    background-size: cover;
+    background-image: url('../assets/MARCUS9.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    aspect-ratio: 1/1;
+    container-type: inline-size;
 }
 
 .portrait > * {
     position: absolute;
 }
 
-.portrait-image {
-    width: 440px;
-    height: 440px;
-    inset: 0;
-}
-
 .portrait-text {
-    font-size: 40px;
-    transform: scaleY(3) translateY(-28px);
-    top: 378px;
-    left: 30px;
+    font-size: 8.66cqw;
+    transform: scaleY(3) scaleX(1.05) translateX(1cqw) translateY(-7cqw);
+    top: 88%;
+    left: 6%;
     color: transparent;
 }
 
-.portrait-cd {
-    width: 80px;
-    top: -8px;
-    right: -8px;
-}
-
 .portrait-pika {
-    top: 200px;
-    left: 26px;
-    width: 100px;
+    top: 38%;
+    left: 10%;
+    width: 30%;
 }
 
 .content {
@@ -84,8 +75,8 @@ body {
 }
 
 .links {
-    transform: scaleX(1.2) scaleY(0.8) translateX(4px) translateY(-16px);
-    height: 160px;
+    transform: scaleX(1.2) scaleY(0.8333) translateX(4px) translateY(-16px);
+    height: 150px;
 }
 
 .links a {
@@ -128,7 +119,7 @@ body {
         padding: 0 10px;
     }
     .portrait {
-        width: min(440px, 100%);
+        width: min(400px, 100%);
     }
 
     body {
