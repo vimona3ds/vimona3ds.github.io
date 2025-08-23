@@ -14,7 +14,15 @@ body {
 }
 
 ul {
-    list-style-type: "";
+    list-style-type: "- ";
+}
+
+li {
+    margin-bottom: 12px;
+}
+
+li:last-child {
+    margin-bottom: 0;
 }
 
 body {
