@@ -99,6 +99,7 @@ body {
     gap: 0px;
     flex: 1 1 auto;
     min-width: 400px;
+    max-width: 600px;
     padding: 16px 36px 60px 0;
 }
 
@@ -108,7 +109,7 @@ body {
 }
 
 .links {
-    --translate-x: 60px;
+    --translate-x: 52px;
     transform: scaleX(1.2) scaleY(0.8333) translateX(var(--translate-x)) translateY(-16px);
     height: 150px;
 }
@@ -155,7 +156,7 @@ body {
         height: 140px;
         margin-top: -10px;
         margin-left: -4px;
-        --translate-x: 0px;
+        --translate-x: -49px;
     }
     .content {
         min-width: unset;
