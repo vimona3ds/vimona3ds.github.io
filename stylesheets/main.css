@@ -120,7 +120,7 @@ body {
 }
 
 .links a:hover::before,
-.links li:first-child a::before {
+.links li.active a::before {
     content: '';
     position: absolute;
     left: -30px;
