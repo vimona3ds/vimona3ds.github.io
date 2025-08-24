@@ -25,6 +25,14 @@ li:last-child {
     margin-bottom: 0;
 }
 
+.links-list {
+    list-style-type: none;
+}
+
+.links-list li {
+    margin-bottom: 0;
+}
+
 body {
     display: flex;
     justify-content: center;
@@ -244,4 +252,8 @@ body {
 .aqua-input, .aqua-button {
     font-family: 'LucidaGrande', 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
     font-size: 16px;
+}
+
+summary {
+    cursor: pointer;
 }
