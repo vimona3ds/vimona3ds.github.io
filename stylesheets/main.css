@@ -147,7 +147,7 @@ body {
     }
     .links {
         max-width: 100%;
-        height: 160px;
+        height: 140px;
         margin-top: -10px;
         margin-left: -4px;
         --translate-x: 0px;
@@ -256,4 +256,8 @@ body {
 
 summary {
     cursor: pointer;
+}
+
+.soon {
+    text-decoration: line-through;
 }
