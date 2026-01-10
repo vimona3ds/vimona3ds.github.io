@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>marcusquest</title>
+</head>
+
+<body>
+    i'm marcus
+    <ul>
+        <li>
+            currently:
+            <ul>
+                <li>
+                    building AI tools for changing your mind
+                </li>
+            </ul>
+        </li>
+        <li>brief history:
+            <ul>
+                <li>withdrew from <a href="https://ucsd.edu" target="_blank" rel="noopener noreferrer">ucsd</a> at 17</li>
+                <li>won hackathons at <a href="https://devpost.com/software/blockfund" target="_blank"
+                        rel="noopener noreferrer">stanford</a>, <a href="https://devpost.com/software/grosseries"
+                        target="_blank" rel="noopener noreferrer">ucsd</a> at 18</li>
+                <li>hired at <a href="https://corp.roblox.com" target="_blank" rel="noopener noreferrer">roblox</a> as a
+                    swe at 19</li>
+                <li>quit roblox at 22</li>
+            </ul>
+        </li>
+        <li>open to housing in sf starting 2/1/26:
+            <ul>
+                <li>must be short-term in shared founder/hacker space</li>
+                <li>can pay + move in same day</li>
+            </ul>
+        </li>
+        <li>
+            contacts
+            <ul>
+                <li>x: <a href="https://x.com/marcusquest" target="_blank" rel="noopener noreferrer">@marcusquest</a></li>
+                <li>email: <a id="email-link" href="#"></a></li>
+                <li>phone: <a id="phone-link" href="#"></a></li>
+            </ul>
+        </li>
+    </ul>
+    <script>
+        (function() {
+            var e = ['hey', 'marcusquest', 'com'];
+            var p = ['650', '488', '4819'];
+            var emailEl = document.getElementById('email-link');
+            var phoneEl = document.getElementById('phone-link');
+            var email = e[0] + '@' + e[1] + '.' + e[2];
+            var phone = '+1' + p.join('');
+            emailEl.href = 'mai' + 'lto:' + email;
+            emailEl.textContent = email;
+            phoneEl.href = 'te' + 'l:' + phone;
+            phoneEl.textContent = '(' + p[0] + ') ' + p[1] + '-' + p[2];
+        })();
+    </script>
+</body>
+
+</html>
